@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: century Gothic;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('alex-42193-unsplash.jpg') center center no-repeat;
+  background-size: cover;
+  
+  &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6; 
+  }
+}
+#solid{
+  background-color: #EE7863;
+  height: 50px;
+}
+ul{
+  float: left;
+  list-style-type: none;
+  margin-top: 15px;
+}
+ul li a{
+  color: #fff;
+  padding: 5px 20px;
+  border:2px solid black;
+  transition: 0.6s ease;
+}
+ul li a:hover{
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
